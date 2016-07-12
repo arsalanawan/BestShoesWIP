@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="~/Scripts/BPS_Scripts/Index.js"></script>
+<div class="row">
+    <form id="planForm" class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-6">
+                <select id="planStatus" class="chosen-select" data-placeholder="Select Status">
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <select id="planProcess" class="chosen-select" data-placeholder="Select Process">
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6">
+                <input type="text" id="fromDate" class="date form-control" placeholder="From Date" required />
+            </div>
+            <div class="col-sm-6">
+                <input type="text" id="toDate" class="date form-control pull-right" placeholder="To Date" required />
+            </div>
+        </div>
+        <a id="searchPlan" class="btn btn-success" style="float:right;">Search</a><br /><br /><br />
+    </form>
+</div>
+<div class="row">
+    <h4 style="float:left;">Plans</h4>
+    <button id="addPlan" class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#addPlanModal">New(+)</button>
+    <hr style="clear:both;"/>
+</div>
+<div class="row">
+    <table id="planTbl" class="table">
+        <thead>
+            <tr>
+                <th>Start Date</th>
+                <th>Day</th>
+                <th>Article No</th>
+                <th>Article Name</th>
+                <th>Party</th>
+                <th>Color</th>
+                <th>Quantity</th>
+                <th>Size</th>
+                <th>Plan No</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @*<tr>
+                <td>1</td>
+                <td>Anna</td>
+                <td>Pitt</td>
+                <td>35</td>
+                <td>35</td>
+                <td>New York</td>
+                <td>USA</td>
+                <td>1</td>
+                <td>Anna</td>
+                <td><input type="checkbox" /></td>
+                <td><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>*@            
+        </tbody>
+    </table>
+</div>
+<!--Add Plan Modal -->
+<div class="modal fade" id="addPlanModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="addPlanForm" action="post" name="addPlanForm" role="form">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">ADD PLAN</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group" style="padding-bottom:40px;">
+                        <div class="col-sm-4">
+                            <input type="text" id="planNo" class="form-control" placeholder="Plan No" readonly required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="planDate" name="planDate" class="form-control" placeholder="Plan Date" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="day" name="day" class="form-control" placeholder="Day" required />
+                        </div>
+                    </div>
+                    <div class="form-group" style="padding-bottom:40px;">
+                        <div class="col-sm-4">
+                            <input type="text" id="articleNo" class="form-control" placeholder="Article No" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="articleName" class="form-control" placeholder="Article" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="articleSize" class="form-control" placeholder="Size" required />
+                        </div>
+                    </div>
+                    <div class="form-group" style="padding-bottom:10px;">
+                        <div class="col-sm-4">
+                            <select id="colorName" class="colorName" data-placeholder="Select Color">
+                            </select>
+                            @*<input type="text" id="color" class="form-control" placeholder="color" required />*@
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="quantity" class="form-control" placeholder="Quantity" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="partyName" class="form-control" placeholder="Party Name" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" id="saveAndAdd" class="savePlan btn btn-primary" value="Save AND Add More" />
+                    <input type="submit" id="saveAndClose" class="savePlan btn btn-primary" value="Save AND Close" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--Edit Plan Modal -->
+<div class="modal fade" id="editPlanModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="addPlanForm" action="post" name="addPlanForm" role="form">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">EDIT PLAN</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group" style="padding-bottom:40px;">
+                        <div class="col-sm-4">
+                            <input type="text" id="planDate" name="planDate" class="form-control" placeholder="Plan Date" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="day" name="day" class="form-control" placeholder="Day" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="articleNo" class="form-control" placeholder="Article No" required />
+                        </div>
+                    </div>
+                    <div class="form-group" style="padding-bottom:40px;">
+                        <div class="col-sm-4">
+                            <input type="text" id="article" class="form-control" placeholder="Article" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="articleSize" class="form-control" placeholder="size" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="color" class="form-control" placeholder="color" required />
+                        </div>
+                    </div>
+                    <div class="form-group" style="padding-bottom:10px;">
+                        <div class="col-sm-4">
+                            <input type="text" id="planNo" class="form-control" placeholder="Plan No" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" id="savePlan" class="btn btn-primary" value="Save" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

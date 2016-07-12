@@ -1,0 +1,9 @@
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\bin\Debug\BestPowerShoesDAL.dll
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\bin\Debug\BestPowerShoesDAL.pdb
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\bin\Debug\log4net.dll
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\bin\Debug\log4net.xml
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\obj\Debug\BestPowerShoesDAL.csprojResolveAssemblyReference.cache
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\obj\Debug\BestPowerShoesDAL.dll
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\obj\Debug\BestPowerShoesDAL.pdb
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\bin\Debug\BestPowerShoesEntities.dll
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesDAL\bin\Debug\BestPowerShoesEntities.pdb

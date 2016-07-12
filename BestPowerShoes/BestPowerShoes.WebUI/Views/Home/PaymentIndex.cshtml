@@ -1,0 +1,139 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="~/Scripts/BPS_Scripts/Index.js"></script>
+<form id="planForm" class="form-horizontal">
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-6">
+                <select id="planStatus" class="chosen-select">
+                    <option value="0">Party Name</option>
+                    <option value="0">Arsalan</option>
+                    <option value="0">Tassaduq</option>
+                </select>
+            </div>
+            
+        </div>
+     </div>
+</form>
+<div class="row">
+    <div class="form-group">
+        <h3 style="float:left;">Weekly Payment Detail</h3>
+        <button id="addPlan" class="btn btn-success" style="float:right;">Print</button>
+        <hr style="clear:both;" />
+    </div>
+</div>
+<div class="row" style="margin-top:20px;">
+    <table id="planTbl" class="table">
+        <thead>
+            <tr>
+                <th>Plan No</th>
+                <th>Opening Date</th>
+                <th>Closing Date</th>
+                <th>Article No</th>
+                <th>Article Name</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Qty</th>
+                <th>Item Rate</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>35</td>
+                <td>Sandal</td>
+                <td>6/10</td>
+                <td>Black</td>
+                <td>2</td>
+                <td>1500</td>
+                <td>3000</td>                
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>35</td>
+                <td>Sandal</td>
+                <td>6/10</td>
+                <td>Black</td>
+                <td>2</td>
+                <td>1500</td>
+                <td>3000</td>
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>35</td>
+                <td>Sandal</td>
+                <td>6/10</td>
+                <td>Black</td>
+                <td>2</td>
+                <td>1500</td>
+                <td>3000</td>
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<a href="#" data-toggle="modal" data-target="#myModalother">Other</a>
+
+<!--other popup-->
+<!-- Modal -->
+<div class="modal fade" id="myModalother" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="height:50px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <p><p class="modal-title bold" style="float:left; font-size:20px;">OTHER EXPENSE</p></p>
+                <div class="clearfloat"></div>
+            </div>
+            <div class="modal-body" id="model_body_rapper">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <div class="form-group">
+                                <div class="col-lg-4"><label for="name11">Detail</label></div>
+                                <div class="col-lg-8">
+                                    <input type="text" name="name11" class="form-control" placeholder="Name (Required)">
+                                </div>
+                            </div><div class="clearfloat"></div><br /><br />
+
+                            <input type="button" class="btn btn-primary btn-lg" style="float:left; margin-left:150px;" value="Save & close" />
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <div class="col-lg-4"><label for="name11">Amount</label></div>
+                                <div class="col-lg-8">
+                                    <input type="text" name="name11" class="form-control" placeholder="Name (Required)">
+                                </div>
+                            </div><div class="clearfloat"></div><br /><br />
+                            <input type="button" class="btn btn-primary btn-lg" style="float:right; margin-right:25px;" value="Save & Add more" />
+                        </div>
+                        <div class="clearfloat"></div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div> <!--end of model content-->
+<!--end other popup-->

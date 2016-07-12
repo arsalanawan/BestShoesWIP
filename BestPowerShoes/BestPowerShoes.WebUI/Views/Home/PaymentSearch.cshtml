@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "PaymentSearch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/BPS_Scripts/Index.js"></script>
+<form id="planForm" class="form-horizontal">
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-6">
+                <select id="planStatus" class="chosen-select">
+                    <option value="0">Party Name</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <select id="planProcess" class="chosen-select" data-placeholder="Select Process">
+                    <option value="0">Cutting</option>
+                    <option value="1">Stiching</option>
+                    <option value="2">Printing</option>
+                    <option value="3">Emboss</option>
+                    <option value="4">Sole Injection</option>
+                    <option value="5">Packing</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6">
+                <input type="text" id="fromDate" class="date form-control" placeholder="From Date" required />
+            </div>
+            <div class="col-sm-6">
+                <input type="text" id="toDate" class="date form-control" placeholder="To Date" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6">
+               
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-success">Search</button>
+            </div>
+        </div>
+        
+    </div>
+</form>
+<div class="row">
+    @*<button id="addPlan" class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#myModal">New(+)</button>*@    <div class="form-group">
+        <h3 style="float:left;">Payment Search</h3>
+      
+        <hr style="clear:both;" />
+    </div>
+</div>
+<div class="row" style="margin-top:20px;">
+    <table id="planTbl" class="table">
+        <thead>
+            <tr>
+                <th>Plan No</th>
+                <th>Opening Date</th>
+                <th>Closing Date</th>
+                <th>Article No</th>
+                <th>Article Name</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Qty</th>
+                <th>Item Rate</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>35</td>
+                <td>Sandal</td>
+                <td>6/10</td>
+                <td>Black</td>
+                <td>2</td>
+                <td>1500</td>
+                <td>3000</td>
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>35</td>
+                <td>Sandal</td>
+                <td>6/10</td>
+                <td>Black</td>
+                <td>2</td>
+                <td>1500</td>
+                <td>3000</td>
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>35</td>
+                <td>Sandal</td>
+                <td>6/10</td>
+                <td>Black</td>
+                <td>2</td>
+                <td>1500</td>
+                <td>3000</td>
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

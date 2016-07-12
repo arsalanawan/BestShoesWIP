@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "ProcessDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/BPS_Scripts/Process.js"></script>
+<h2>Process Detail</h2>
+<div class="row">
+    <form id="planForm" class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-6">
+                <select id="planStatus" class="chosen-select" data-placeholder="Select Status">
+                    <option value="1">InProgress</option>
+                    <option value="2">Completed</option>
+                    <option value="3">Ready</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <input type="text" id="partyName" class="form-control pull-right" placeholder="Party Name" required />
+            </div>
+        </div>
+        <a id="searchProcess" class="btn btn-success" style="float:right;">Search</a><br /><br /><br />
+    </form>
+</div>
+<div class="row">
+    <table id="processTbl" class="table">
+        <thead>
+            <tr>
+                <th>Start Date</th>
+                <th>Day</th>
+                <th>Article No</th>
+                <th>Article Name</th>
+                <th>Party</th>
+                <th>Color</th>
+                <th>Quantity</th>
+                <th>Size</th>
+                <th>Plan No</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Anna</td>
+                <td>Pitt</td>
+                <td>35</td>
+                <td>35</td>
+                <td>New York</td>
+                <td>USA</td>
+                <td>1</td>
+                <td>Anna</td>
+                <td><input type="checkbox" /></td>
+                <td><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Anna</td>
+                <td>Pitt</td>
+                <td>35</td>
+                <td>35</td>
+                <td>New York</td>
+                <td>USA</td>
+                <td>1</td>
+                <td>Anna</td>
+                <td><input type="checkbox" /></td>
+                <td><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "AdvancePayment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/BPS_Scripts/Index.js"></script>
+<div class="row">
+    <form id="planForm" class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-6">
+                <label for="advanceAmount">Party Name</label>
+                <select class="form-control">
+                    <option value="0">Party Name</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <label for="advanceAmount">Process Name</label>
+                <select class="form-control">
+                    <option value="0">Process</option>
+                </select>
+            </div>
+        </div><br/>
+        <div class="form-group">
+            <div class="col-sm-6">
+                <label for="advanceAmount">Advance Amount</label>
+                <input type="text" id="advanceAmount" class="form-control" placeholder="Amount To Be Paid" required />
+            </div>
+            <div class="col-sm-6">
+                <label for="advancePaid">Already Paid Advance</label>
+                <input type="text" id="advancePaid" class="form-control" placeholder="Advance Amount Paid" required />
+            </div>
+        </div><br/>
+
+        <div class="form-group">
+            <div class="col-sm-6">
+                <label for="workdone">Work Have Done</label>
+                <input type="text" id="workdone" class="form-control" placeholder="Amount of Work done" required />
+            </div><br/>
+            <div class="col-sm-6">
+                
+                <input type="button" class="btn btn-success" value="Save" />
+                
+            </div>
+            
+        </div><br/><br/>
+            
+</form>
+</div>
+<div class="row">
+    <div class="form-group">
+        <h3 style="float:left;">Advance Payment Detail</h3>
+        @*<button id="addPlan" class="btn btn-success" style="float:right;" data-toggle="modal" data-target="#myModal">New(+)</button>*@
+        <hr style="clear:both;" />
+    </div>
+</div>
+<div class="row" style="margin-top:20px;">
+    <table id="planTbl" class="table">
+        <thead>
+            <tr>
+                <th>Party Name</th>
+                <th>Process</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Amount</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arsalan</td>
+                <td>Cutting</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>3500</td>
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+            <tr>
+                <td>Umair</td>
+                <td>Stiching</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>2500</td>
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+            <tr>
+                <td>Ghulam Farid</td>
+                <td>Packing</td>
+                <td>20-04-2016</td>
+                <td>27-04-2016</td>
+                <td>2500</td>
+                <td><span class="glyphicon glyphicons-view-360"></span><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

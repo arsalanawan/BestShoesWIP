@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "Article Page";
+}
+<style>
+    .modal-dialog {
+        width: 75%;
+    }
+   
+</style>
+<script src="~/Scripts/BPS_Scripts/Article.js"></script>
+
+<div class="row">
+    <div class="form-group">
+        <h3 style="float:left;">Articles</h3>
+        <input type="button" id="addarticle" class="btn-success" style="float:right;" value="New(+)" data-toggle="modal" data-target="#myModal" />
+        <hr style="clear:both;" />
+    </div>
+</div>
+<div class="row" style="margin-top:20px;">
+    <table id="artTbl" class="table">
+        <thead>
+            <tr>
+                <th>Article No</th>
+                <th>Article Name</th>
+                <th>Size</th>
+                <th>Actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+<!-- Modal -->
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="height:50px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <p class="modal-title bold" style="float:left; font-size:20px;">SAVE ARTICAL</p>
+            </div>
+            <div class="clearfloat"></div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        @using (Html.BeginForm("", "", FormMethod.Post, new { @Id = "articleForm", @class = "", role = "form" }))
+                        {
+                            <input type="hidden" id="ArticleId" value="0"/>
+                            <div class="form-group">
+                                <div class="col-lg-2 col-lg-offset-1"><label for="name11">Artical No</label></div>
+                                <div class="col-lg-3"><input type="text" id="articalNo" class="form-control" placeholder="Artical Number(Required)" required="required" /></div>
+                            </div><div class="clearfloat"></div><br /><br />
+                            <div class="form-group">
+                                <div class="col-lg-2 col-lg-offset-1"><label for="name11">Artical Name</label></div>
+                                <div class="col-lg-3"><input type="text" id="articleName" class="form-control" placeholder="Artical Name(Required)" required="required" /></div>
+                            </div><div class="clearfloat"></div><br /><br />
+                            <div class="form-group">
+                                <div class="col-lg-2 col-lg-offset-1"><label for="size">Size</label></div>
+                                <div class="col-lg-3">
+                                    <select class="form-control" id="size">
+                                        <option value="6/10">6/10</option>
+                                        <option value="7/10">7/10</option>
+                                        <option value="5/11">5/11</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="clearfloat"></div><br />
+
+
+                            <div id="rate_detail">
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-lg-offset-1"><label for="cuttingFactoryInRate">Cutting</label></div>
+                                    <div class="col-lg-3"><input type="text" id="cuttingFactoryInRate" class="form-control" placeholder="In Rate" required></div>
+                                    <div class="col-lg-3"><input type="text" id="cuttingFactoryOutRate" class="form-control" placeholder="Out Rate" required></div>
+                                </div><div class="clearfloat"></div><br /><br /><br />
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-lg-offset-1"><label for="stichingFactoryInRate">Stiching</label></div>
+                                    <div class="col-lg-3"><input type="text" id="stichingFactoryInRate" class="form-control" placeholder="In Rate"></div>
+                                    <div class="col-lg-3"><input type="text" id="stichingFactoryOutRate" class="form-control" placeholder="Out Rate"></div>
+                                </div><div class="clearfloat"></div><br /><br />
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-lg-offset-1"><label for="printingFactoryInRate">Priniting</label></div>
+                                    <div class="col-lg-3"><input type="text" id="printingFactoryInRate" class="form-control" placeholder="In Rate"></div>
+                                    <div class="col-lg-3"><input type="text" id="printingFactoryOutRate" class="form-control" placeholder="Out Rate"></div>
+                                </div><div class="clearfloat"></div><br /><br />
+                                 <div class="form-group">
+                                    <div class="col-lg-2 col-lg-offset-1"><label for="printingFactoryInRate">Emboss</label></div>
+                                    <div class="col-lg-3"><input type="text" id="printingFactoryInRate" class="form-control" placeholder="In Rate"></div>
+                                    <div class="col-lg-3"><input type="text" id="printingFactoryOutRate" class="form-control" placeholder="Out Rate"></div>
+                                </div><div class="clearfloat"></div><br /><br />
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-lg-offset-1"><label for="soleInjectionFactoryInRate">Sole Injection</label></div>
+                                    <div class="col-lg-3"><input type="text" id="soleInjectionFactoryInRate" class="form-control" placeholder="In Rate"></div>
+                                    <div class="col-lg-3"><input type="text" id="soleInjectionFactoryOutRate" class="form-control" placeholder="Out Rate"></div>
+                                </div><div class="clearfloat"></div><br /><br />
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-lg-offset-1"><label for="packingFactoryInRate">Packing</label></div>
+                                    <div class="col-lg-3"><input type="text" id="packingFactoryInRate" class="form-control" placeholder="In Rate"></div>
+                                    <div class="col-lg-3"><input type="text" id="packingFactoryOutRate" class="form-control" placeholder="Out Rate"></div>
+                                </div><div class="clearfloat"></div><br /><br /><br />
+                                <br /><br />
+                                <div id="queryMsg">
+
+                                </div>
+                                <!--End for Input Control-->
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-lg-offset-1"></div>
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6">
+                                        <input type="button" id="articleSaveAddMoreId" class="btn btn-primary" value="Save & Add More" />
+                                        <input type="button" id="articleSaveCloseId" class="btn btn-default" value="Save & Close" />
+                                    </div>
+                                </div><div class="clearfloat"></div><br /><br />
+                            </div>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

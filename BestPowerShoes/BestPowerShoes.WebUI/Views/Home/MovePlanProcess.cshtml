@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="~/Scripts/BPS_Scripts/Process.js"></script>
+
+<div class="row">
+    <form id="planForm" class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-6">
+                <input type="text" id="partyName" class="form-control" placeholder="Party Name" />
+            </div>
+            <div class="col-sm-6">
+                <select id="planProcess" class="chosen-select" data-placeholder="Select Process">
+                    <option value="1">Cutting</option>
+                    <option value="2">Stiching</option>
+                    <option value="3">Prinitng</option>
+                    <option value="4">Embos</option>
+                    <option value="5">Sole Injection</option>
+                    <option value="6">Paking</option>
+                </select>
+            </div>
+        </div>
+        <a id="searchPlan" class="btn btn-success" style="float:right;">Search</a><br /><br /><br />
+    </form>
+</div>
+
+<div class="row">
+    <h4 style="float:left;">Available Process</h4>
+    <hr style="clear:both;" />
+</div>
+
+<div class="row">
+        <table id="processTbl" class="table">
+            <thead>
+                <tr>
+                    <th>Start Date</th>
+                    <th>Day</th>
+                    <th>Article No</th>
+                    <th>Article Name</th>
+                    <th>Party</th>
+                    <th>Color</th>
+                    <th>Quantity</th>
+                    <th>Size</th>
+                    <th>Plan No</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>1</td>
+                    <td>Anna</td>
+                    <td><input type="checkbox" /></td>
+                    <td><span class="glyphicon glyphicon-retweet"></span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aa</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>1</td>
+                    <td>Anna</td>
+                    <td><input type="checkbox" /></td>
+                    <td><span class="glyphicon glyphicon-retweet"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<div class="row">
+    <input type="text" class="form-control" placeholder="Upper Man" />
+    <hr style="clear:both;" />
+</div>
+
+<div class="row">
+    <h4 style="float:left;">Ready For UpperMan</h4>
+    <hr style="clear:both;" />
+</div>
+
+<div class="row">
+    <table id="processTbl" class="table">
+        <thead>
+            <tr>
+                <th>Start Date</th>
+                <th>Day</th>
+                <th>Article No</th>
+                <th>Article Name</th>
+                <th>Party</th>
+                <th>Color</th>
+                <th>Quantity</th>
+                <th>Size</th>
+                <th>Plan No</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @*
+                <tr>
+                    <td>1</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>1</td>
+                    <td>Anna</td>
+                    <td><input type="checkbox" /></td>
+                    <td><a class="editPlan glyphicon glyphicon-edit" data-toggle="modal" data-target="#editPlanModal"></a><span class="glyphicon glyphicon-remove"></span></td>
+                </tr>*@
+        </tbody>
+    </table>
+</div>
