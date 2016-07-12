@@ -5,7 +5,41 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPowerShoes.WebUI", "BestPowerShoes.WebUI\BestPowerShoes.WebUI.csproj", "{A854FDDC-8D38-42DB-B81A-04253DFAA7E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPowerShoes.WebApi", "BestPowerShoes.WebApi\BestPowerShoes.WebApi.csproj", "{6C90E29D-DE40-43B9-B4D7-9670363B0225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPowerShoesBLL", "BestPowerShoesBLL\BestPowerShoesBLL.csproj", "{03A39E59-ABAD-495E-9437-6CB78D492361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPowerShoesDAL", "BestPowerShoesDAL\BestPowerShoesDAL.csproj", "{1CD34B80-D713-44BE-AF62-6F75E0C004C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPowerShoesCommon", "BestPowerShoesCommon\BestPowerShoesCommon.csproj", "{FA7AE27D-4ED6-4716-B7A4-CA08465E3911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPowerShoesEntities", "BestPowerShoesEntities\BestPowerShoesEntities.csproj", "{8C4D1379-DEAE-4B07-9B92-45846B477F26}"
+EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://bestpowershoes.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BestPowerShoes.WebUI\\BestPowerShoes.WebUI.csproj
+		SccProjectName1 = BestPowerShoes.WebUI
+		SccLocalPath1 = BestPowerShoes.WebUI
+		SccProjectUniqueName2 = BestPowerShoes.WebApi\\BestPowerShoes.WebApi.csproj
+		SccProjectName2 = BestPowerShoes.WebApi
+		SccLocalPath2 = BestPowerShoes.WebApi
+		SccProjectUniqueName3 = BestPowerShoesBLL\\BestPowerShoesBLL.csproj
+		SccProjectName3 = BestPowerShoesBLL
+		SccLocalPath3 = BestPowerShoesBLL
+		SccProjectUniqueName4 = BestPowerShoesDAL\\BestPowerShoesDAL.csproj
+		SccProjectName4 = BestPowerShoesDAL
+		SccLocalPath4 = BestPowerShoesDAL
+		SccProjectUniqueName5 = BestPowerShoesCommon\\BestPowerShoesCommon.csproj
+		SccProjectName5 = BestPowerShoesCommon
+		SccLocalPath5 = BestPowerShoesCommon
+		SccProjectUniqueName6 = BestPowerShoesEntities\\BestPowerShoesEntities.csproj
+		SccProjectName6 = BestPowerShoesEntities
+		SccLocalPath6 = BestPowerShoesEntities
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -15,6 +49,26 @@ Global
 		{A854FDDC-8D38-42DB-B81A-04253DFAA7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A854FDDC-8D38-42DB-B81A-04253DFAA7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A854FDDC-8D38-42DB-B81A-04253DFAA7E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C90E29D-DE40-43B9-B4D7-9670363B0225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C90E29D-DE40-43B9-B4D7-9670363B0225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C90E29D-DE40-43B9-B4D7-9670363B0225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C90E29D-DE40-43B9-B4D7-9670363B0225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03A39E59-ABAD-495E-9437-6CB78D492361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A39E59-ABAD-495E-9437-6CB78D492361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A39E59-ABAD-495E-9437-6CB78D492361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A39E59-ABAD-495E-9437-6CB78D492361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD34B80-D713-44BE-AF62-6F75E0C004C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD34B80-D713-44BE-AF62-6F75E0C004C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD34B80-D713-44BE-AF62-6F75E0C004C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD34B80-D713-44BE-AF62-6F75E0C004C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7AE27D-4ED6-4716-B7A4-CA08465E3911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7AE27D-4ED6-4716-B7A4-CA08465E3911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7AE27D-4ED6-4716-B7A4-CA08465E3911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7AE27D-4ED6-4716-B7A4-CA08465E3911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4D1379-DEAE-4B07-9B92-45846B477F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4D1379-DEAE-4B07-9B92-45846B477F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4D1379-DEAE-4B07-9B92-45846B477F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4D1379-DEAE-4B07-9B92-45846B477F26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
