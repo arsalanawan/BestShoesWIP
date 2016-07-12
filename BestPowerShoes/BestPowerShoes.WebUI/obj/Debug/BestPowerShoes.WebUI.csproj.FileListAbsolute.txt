@@ -24,3 +24,29 @@ F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\Antlr3.Runtime.pdb
 F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\obj\Debug\BestPowerShoes.WebUI.csprojResolveAssemblyReference.cache
 F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\obj\Debug\BestPowerShoes.WebUI.dll
 F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\obj\Debug\BestPowerShoes.WebUI.pdb
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\BestPowerShoes.WebUI.dll.config
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\BestPowerShoes.WebUI.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\BestPowerShoes.WebUI.pdb
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\Antlr3.Runtime.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.Optimization.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.Razor.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.WebPages.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\WebGrease.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.Optimization.xml
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.Razor.xml
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.WebPages.xml
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\obj\Debug\BestPowerShoes.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\obj\Debug\BestPowerShoes.WebUI.dll
+C:\Users\Xaman Zahra\Desktop\BestShoesWIP\BestPowerShoes\BestPowerShoes.WebUI\obj\Debug\BestPowerShoes.WebUI.pdb
