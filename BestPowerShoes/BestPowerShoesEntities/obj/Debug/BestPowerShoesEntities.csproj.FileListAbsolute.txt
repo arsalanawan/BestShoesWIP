@@ -1,0 +1,5 @@
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesEntities\bin\Debug\BestPowerShoesEntities.dll
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesEntities\bin\Debug\BestPowerShoesEntities.pdb
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesEntities\obj\Debug\BestPowerShoesEntities.dll
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesEntities\obj\Debug\BestPowerShoesEntities.pdb
+F:\BestPowerShoesWIP\BestPowerShoes\BestPowerShoesEntities\obj\Debug\BestPowerShoesEntities.csprojResolveAssemblyReference.cache
